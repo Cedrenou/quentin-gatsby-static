@@ -98,9 +98,40 @@ class Main extends React.Component {
                     <h2 className="major">Contact</h2>
 
                     <div>
-                        <p>Email: lorem@ipsum.com</p>
-                        <p>Tel: 06.22.23.24.25</p>
+                        <ul className='icons'>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCKSYmx-Rg2VpEc_KwKJVjdA"
+                                   target='_blank'
+                                   className="icon fa-envelope">
+                                    <span className="label">Mon Email: lorem@ipsum.com</span></a>
+                            </li>
+                        </ul>
+
+                        <p>Mon Tel: 06.22.23.24.25</p>
                     </div>
+
+                    <form method="post"  data-netlify="true" netlify>
+                        <div className="field half first">
+                            <label htmlFor="name">Name</label>
+                            <input type="text" name="name" id="name"/>
+                        </div>
+                        <div className="field half">
+                            <label htmlFor="email">Email</label>
+                            <input type="text" name="email" id="email"/>
+                        </div>
+                        <div className="field">
+                            <label htmlFor="message">Message</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                        </div>
+                        <ul className="actions">
+                            <li>
+                                <input type="submit" value="Send Message" className="special"/>
+                            </li>
+                            <li>
+                                <input type="reset" value="Reset"/>
+                            </li>
+                        </ul>
+                    </form>
 
                     <ul className="icons">
                         <li>
@@ -108,11 +139,6 @@ class Main extends React.Component {
                                target='_blank'
                                className="icon fa-youtube-play">
                                 <span className="label">Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="icon fa-facebook">
-                                <span className="label">Facebook</span>
                             </a>
                         </li>
                         <li>
