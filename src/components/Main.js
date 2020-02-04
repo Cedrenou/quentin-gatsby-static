@@ -112,7 +112,7 @@ class Main extends React.Component {
 
                     <form method="post"
                           name="contact"
-                          action="/contact"
+                          action="/"
                           encType="multipart/form-data"
                           data-netlify="true"
                           netlify-honeypot="bot-field"
