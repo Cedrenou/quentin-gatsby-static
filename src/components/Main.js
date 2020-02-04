@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
 
 class Main extends React.Component {
     render() {
@@ -53,17 +52,17 @@ class Main extends React.Component {
                 <article id="work"
                          className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
                          style={{display: 'none'}}>
-                    <h2 className="major">Work</h2>
+                    <h2 className="major">Mes sons</h2>
                     <span className="image main">
-            <img src={pic02} alt=""/>
-          </span>
-                    <p>
                         <iframe width="100%"
                                 height="300"
                                 scrolling="no"
                                 frameBorder="no"
                                 allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/723315721&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/659259596&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+          </span>
+                    <p>
                         Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
                         at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
                         urna nisi, fringila lorem et vehicula lacinia quam. Integer
@@ -94,8 +93,9 @@ class Main extends React.Component {
 
                     <ul className="icons">
                         <li>
-                            <a href="#"
-                               className="icon fa-twitter">
+                            <a href="https://www.youtube.com/channel/UCKSYmx-Rg2VpEc_KwKJVjdA"
+                               target='_blank'
+                               className="icon fa-youtube-play">
                                 <span className="label">Twitter</span>
                             </a>
                         </li>
@@ -105,7 +105,9 @@ class Main extends React.Component {
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="icon fa-instagram">
+                            <a href="https://www.instagram.com/beatbox.vd/"
+                               target='_blank'
+                               className="icon fa-instagram">
                                 <span className="label">Instagram</span>
                             </a>
                         </li>
