@@ -110,7 +110,10 @@ class Main extends React.Component {
                         <p>Mon Tel: 06.22.23.24.25</p>
                     </div>
 
-                    <form method="post"  data-netlify="true" netlify>
+                    <form method="post" name="contact" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+                        <p className="hidden">
+                            <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+                        </p>
                         <div className="field half first">
                             <label htmlFor="name">Name</label>
                             <input type="text" name="name" id="name"/>
@@ -131,6 +134,9 @@ class Main extends React.Component {
                                 <input type="reset" value="Reset"/>
                             </li>
                         </ul>
+
+                        <div data-netlify-recaptcha="true"></div>
+
                     </form>
 
                     <ul className="icons">
