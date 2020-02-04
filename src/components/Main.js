@@ -59,9 +59,20 @@ class Main extends React.Component {
                                 scrolling="no"
                                 frameBorder="no"
                                 allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/659259596&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/659259596&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                        </iframe>
 
-          </span>
+                        <hr className="divider"></hr>
+
+                        <iframe width="100%"
+                                height="300"
+                                scrolling="no"
+                                frameBorder="no"
+                                allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/653291855&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                        </iframe>
+
+                    </span>
                     <p>
                         Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
                         at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
