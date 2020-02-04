@@ -110,7 +110,13 @@ class Main extends React.Component {
                         <p>Mon Tel: 06.22.23.24.25</p>
                     </div>
 
-                    <form method="post" name="contact" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+                    <form method="post"
+                          name="contact"
+                          action="/contact"
+                          encType="multipart/form-data"
+                          data-netlify="true"
+                          netlify-honeypot="bot-field"
+                          data-netlify-recaptcha="true">
                         <p style={{display: 'none'}}>
                             <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
                         </p>
