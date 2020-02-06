@@ -134,7 +134,7 @@ class Main extends React.Component {
                     <form
                         method="post"
                         name="contact form"
-                        action="/"
+                        action="/success"
                         data-netlify="true"
                         netlify-honeypot="bot-field"
                         data-netlify-recaptcha="true">
