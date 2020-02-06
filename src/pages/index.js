@@ -15,10 +15,18 @@ class IndexPage extends React.Component {
             article: '',
             loading: 'is-loading'
         }
-        this.handleOpenArticle = this.handleOpenArticle.bind(this)
-        this.handleCloseArticle = this.handleCloseArticle.bind(this)
-        this.setWrapperRef = this.setWrapperRef.bind(this);
-        this.handleClickOutside = this.handleClickOutside.bind(this);
+        this.handleOpenArticle = this
+            .handleOpenArticle
+            .bind(this)
+        this.handleCloseArticle = this
+            .handleCloseArticle
+            .bind(this)
+        this.setWrapperRef = this
+            .setWrapperRef
+            .bind(this);
+        this.handleClickOutside = this
+            .handleClickOutside
+            .bind(this);
     }
 
     componentDidMount() {
@@ -93,16 +101,18 @@ class IndexPage extends React.Component {
         return (
             <Layout location={this.props.location}>
                 <div
-                    className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
+                    className={`body ${this.state.loading} ${this.state.isArticleVisible
+                    ? 'is-article-visible'
+                    : ''}`}>
                     <div id="wrapper">
                         <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout}/>
-                        <Main isArticleVisible={this.state.isArticleVisible}
-                              timeout={this.state.timeout}
-                              articleTimeout={this.state.articleTimeout}
-                              article={this.state.article}
-                              onCloseArticle={this.handleCloseArticle}
-                              setWrapperRef={this.setWrapperRef}
-                        />
+                        <Main
+                            isArticleVisible={this.state.isArticleVisible}
+                            timeout={this.state.timeout}
+                            articleTimeout={this.state.articleTimeout}
+                            article={this.state.article}
+                            onCloseArticle={this.handleCloseArticle}
+                            setWrapperRef={this.setWrapperRef}/>
                         <Footer timeout={this.state.timeout}/>
                     </div>
                     <div id="bg"></div>
