@@ -132,12 +132,10 @@ class Main extends React.Component {
                     </div>
 
                     <form
-                        method="post"
+                        method="POST"
                         name="contact form"
                         action="/success"
-                        data-netlify="true"
-                        netlify-honeypot="bot-field"
-                        data-netlify-recaptcha="true">
+                        data-netlify="true">
 
                         <input type="hidden" name="form-name" value="contact form"/>
 
